@@ -1,3 +1,4049 @@
   [1m[36m (3.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
   [1m[35m (16.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 11:02:59 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 1207ms (Views: 1187.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 11:03:01 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 11:03:01 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 11:03:01 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 11:03:01 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 11:03:01 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 11:03:01 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 11:03:01 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 11:03:01 +0000
+
+
+Started GET "/callback?code=483e97fb1e3d4eb0a08f33acd6ee0563" for 169.232.218.18 at 2014-04-12 11:03:07 +0000
+
+ActionController::RoutingError (uninitialized constant MainController):
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3928457501016281709__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.1ms)
+
+
+Started GET "/callback?code=483e97fb1e3d4eb0a08f33acd6ee0563" for 169.232.218.18 at 2014-04-12 11:03:31 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"483e97fb1e3d4eb0a08f33acd6ee0563"}
+Completed 500 Internal Server Error in 250ms
+
+Instagram::BadRequest (POST https://api.instagram.com/oauth/access_token/: 400):
+  app/controllers/home_controller.rb:14:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started GET "/callback?code=483e97fb1e3d4eb0a08f33acd6ee0563" for 169.232.218.18 at 2014-04-12 11:07:25 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"483e97fb1e3d4eb0a08f33acd6ee0563"}
+Completed 500 Internal Server Error in 226ms
+
+Instagram::BadRequest (POST https://api.instagram.com/oauth/access_token/: 400):
+  app/controllers/home_controller.rb:14:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:16:55 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 170ms
+
+Instagram::BadRequest (POST https://api.instagram.com/oauth/access_token/: 400):
+  app/controllers/home_controller.rb:14:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:23:42 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `options' for #<HomeController:0x00000004071210>):
+  app/controllers/home_controller.rb:17:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:24:13 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 46ms
+
+NameError (undefined local variable or method `options' for #<HomeController:0x00000003f23ac0>):
+  app/controllers/home_controller.rb:17:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:25:28 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 48ms
+
+NameError (undefined local variable or method `access_token_params' for #<HomeController:0x00000003f47e98>):
+  app/controllers/home_controller.rb:20:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:27:11 +0000
+
+SyntaxError (/home/rails/app/controllers/home_controller.rb:22: syntax error, unexpected tSYMBEG, expecting '}'
+        :code => params[:code]
+         ^
+/home/rails/app/controllers/home_controller.rb:23: syntax error, unexpected '}', expecting keyword_end):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1910808028014123852__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.8ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:27:28 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 55ms
+
+NoMethodError (undefined method `post' for #<HomeController:0x000000040ed0b8>):
+  app/controllers/home_controller.rb:24:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:27:58 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `post' for Instagram::Request:Module):
+  app/controllers/home_controller.rb:24:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:28:35 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 174ms
+
+Instagram::BadRequest (POST https://api.instagram.com/oauth/access_token/: 400):
+  app/controllers/home_controller.rb:24:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 11:40:34 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 129ms (Views: 127.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 11:40:35 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 11:40:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 11:40:35 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 11:40:35 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 11:40:35 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 11:40:35 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 11:40:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 11:40:35 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 11:40:41 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 11:40:41 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 11:40:41 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 11:40:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 11:40:41 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 11:40:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 11:40:41 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 11:40:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 11:40:41 +0000
+
+
+Started GET "/callback?code=cc45be9cdee9424e8bb8e6cbe61aeb42" for 169.232.218.18 at 2014-04-12 11:40:52 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"cc45be9cdee9424e8bb8e6cbe61aeb42"}
+Completed 500 Internal Server Error in 160ms
+
+Instagram::BadRequest (POST https://api.instagram.com/oauth/access_token/: 400):
+  app/controllers/home_controller.rb:24:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.6ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:44:32 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 224ms
+
+Instagram::BadRequest (POST https://api.instagram.com/oauth/access_token/: 400):
+  app/controllers/home_controller.rb:14:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:48:22 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 217ms
+
+Instagram::BadRequest (POST https://api.instagram.com/oauth/access_token/: 400):
+  app/controllers/home_controller.rb:14:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:49:03 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+44472bb5fc8547e5a89b366844360b39
+Completed 500 Internal Server Error in 226ms
+
+Instagram::BadRequest (POST https://api.instagram.com/oauth/access_token/: 400):
+  app/controllers/home_controller.rb:15:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:50:29 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 225ms
+
+Instagram::BadRequest (POST https://api.instagram.com/oauth/access_token/: 400):
+  app/controllers/home_controller.rb:24:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:59:38 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 52ms
+
+NoMethodError (undefined method `body=' for #<ActionDispatch::Request:0x000000052e31c8>):
+  app/controllers/home_controller.rb:26:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.5ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 11:59:52 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 153ms
+
+NoMethodError (undefined method `bytesize' for #<Hash:0x00000005547ef0>):
+  app/controllers/home_controller.rb:29:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 12:03:31 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+Completed 500 Internal Server Error in 264ms
+
+NoMethodError (undefined method `set_body_internal' for #<Net::HTTPBadRequest 400 BAD REQUEST readbody=true>):
+  app/controllers/home_controller.rb:29:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.1ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 12:04:44 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+{"code": 400, "error_type": "OAuthException", "error_message": "No matching code found."}
+Completed 500 Internal Server Error in 177ms
+
+ActionView::MissingTemplate (Missing template home/callback, application/callback with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/rails/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__2444898227810674988__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2977545932696686573__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 12:06:40 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+{"code": 400, "error_type": "OAuthException", "error_message": "No matching code found."}
+Completed 500 Internal Server Error in 178ms
+
+NoMethodError (undefined method `redirect' for #<HomeController:0x000000057c5ab0>):
+  app/controllers/home_controller.rb:28:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (83.5ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 12:06:49 +0000
+
+LoadError (Unable to autoload constant HomeController, expected /home/rails/app/controllers/home_controller.rb to define it):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:464:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2977545932696686573__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (27.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.3ms)
+
+
+Started GET "/callback?code=44472bb5fc8547e5a89b366844360b39" for 169.232.218.18 at 2014-04-12 12:07:10 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"44472bb5fc8547e5a89b366844360b39"}
+{"code": 400, "error_type": "OAuthException", "error_message": "No matching code found."}
+Redirected to http://selfieaware.comhome#show
+Completed 302 Found in 173ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=27dde0d5dcdf4ef6ac04da9df857d2de" for 169.232.218.18 at 2014-04-12 12:07:28 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"27dde0d5dcdf4ef6ac04da9df857d2de"}
+{"access_token":"177479209.482cefd.a1c5f069ae4f483aa9dcaa89e146d043","user":{"username":"louiswilliamsofficial","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_177479209_75sq_1365346292.jpg","full_name":"Louis Williams","id":"177479209"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 189ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=7ddc9e9232c64d68b46339087936fef3" for 169.232.218.18 at 2014-04-12 12:09:28 +0000
+
+SyntaxError (/home/rails/app/controllers/home_controller.rb:46: syntax error, unexpected ']', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2977545932696686573__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/callback?code=7ddc9e9232c64d68b46339087936fef3" for 169.232.218.18 at 2014-04-12 12:11:25 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"7ddc9e9232c64d68b46339087936fef3"}
+Completed 500 Internal Server Error in 193ms
+
+NoMethodError (undefined method `access_token' for #<String:0x00000005501b08>):
+  app/controllers/home_controller.rb:28:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.3ms)
+
+
+Started GET "/callback?code=7ddc9e9232c64d68b46339087936fef3" for 169.232.218.18 at 2014-04-12 12:13:56 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"7ddc9e9232c64d68b46339087936fef3"}
+Completed 500 Internal Server Error in 172ms
+
+NoMethodError (undefined method `access_token' for #<String:0x00000005724368>):
+  app/controllers/home_controller.rb:28:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (33.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.1ms)
+
+
+Started GET "/callback?code=7ddc9e9232c64d68b46339087936fef3" for 169.232.218.18 at 2014-04-12 12:14:08 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"7ddc9e9232c64d68b46339087936fef3"}
+Completed 500 Internal Server Error in 191ms
+
+NoMethodError (undefined method `access_token' for #<String:0x00000004c88468>):
+  app/controllers/home_controller.rb:28:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.2ms)
+
+
+Started GET "/callback?code=7ddc9e9232c64d68b46339087936fef3" for 169.232.218.18 at 2014-04-12 12:15:17 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"7ddc9e9232c64d68b46339087936fef3"}
+Completed 500 Internal Server Error in 186ms
+
+NoMethodError (undefined method `access_token' for #<String:0x00000001ca5a70>):
+  app/controllers/home_controller.rb:28:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.1ms)
+
+
+Started GET "/callback?code=7ddc9e9232c64d68b46339087936fef3" for 169.232.218.18 at 2014-04-12 12:15:41 +0000
+
+SyntaxError (/home/rails/app/controllers/home_controller.rb:28: syntax error, unexpected tIDENTIFIER, expecting keyword_end):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2580505268525037094__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/callback?code=7ddc9e9232c64d68b46339087936fef3" for 169.232.218.18 at 2014-04-12 12:16:43 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"7ddc9e9232c64d68b46339087936fef3"}
+Completed 500 Internal Server Error in 175ms
+
+NoMethodError (undefined method `access_token' for #<Hash:0x000000046b1918>):
+  app/controllers/home_controller.rb:28:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.6ms)
+
+
+Started GET "/callback?code=7ddc9e9232c64d68b46339087936fef3" for 169.232.218.18 at 2014-04-12 12:16:58 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"7ddc9e9232c64d68b46339087936fef3"}
+{"code": 400, "error_type": "OAuthException", "error_message": "No matching code found."}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 171ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:16:58 +0000
+Processing by HomeController#show as HTML
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template home/show, application/show with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/rails/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:403:in `_run__1928768214139027526__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2580505268525037094__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:19:22 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 92ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:19:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:19:23 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:19:23 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:22:04 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:22:04 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:22:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:22:06 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:22:06 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:22:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:22:06 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:22:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:22:18 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:23:47 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (No route matches {:action=>"logout", :method=>:post, :controller=>"home"}):
+    1: <h1>You are home!</h1>
+    2: <%= link_to "Log out...", :action => "logout", :method => :post %>
+  app/views/home/show.html.erb:2:in `_app_views_home_show_html_erb___2989108574563865670_40672900'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (28.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.6ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:27:36 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (No route matches {:action=>"logout", :method=>:post, :controller=>"home"}):
+    1: <h1>You are home!</h1>
+    2: <%= link_to "Log out...", :action => "logout", :method => :post %>
+  app/views/home/show.html.erb:2:in `_app_views_home_show_html_erb___2989108574563865670_16816260'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.9ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:28:12 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (No route matches {:action=>"logout", :method=>:post, :controller=>"home"}):
+    1: <h1>You are home!</h1>
+    2: <%= link_to "Log out...", :action => "logout", :method => :post %>
+  app/views/home/show.html.erb:2:in `_app_views_home_show_html_erb___2989108574563865670_24247040'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:29:02 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:29:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:29:02 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:29:03 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:29:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:29:04 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:29:04 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:29:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:29:05 +0000
+
+
+Started GET "/logout?method=post" for 169.232.218.18 at 2014-04-12 12:29:09 +0000
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.7ms)
+
+
+Started GET "/logout?method=post" for 169.232.218.18 at 2014-04-12 12:29:42 +0000
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (31.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (47.8ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:29:55 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:29:56 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:29:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:29:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:29:57 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:29:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:29:57 +0000
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:30:06 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:30:20 +0000
+
+
+Started GET "/logout" for 169.232.218.18 at 2014-04-12 12:31:26 +0000
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.9ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:31:44 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:31:45 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:31:45 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:31:45 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:31:45 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:31:45 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:31:45 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:31:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:31:45 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:32:02 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:03 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:03 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:03 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:03 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:03 +0000
+
+
+Started POST "/logout?method=post" for 169.232.218.18 at 2014-04-12 12:32:04 +0000
+
+AbstractController::ActionNotFound (The action 'logout' could not be found for HomeController):
+  actionpack (4.0.2) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2580505268525037094__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.7ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:32:17 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:18 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:18 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:18 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:18 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:18 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:18 +0000
+
+
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:18 +0000
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:18 +0000
+
+
+Started POST "/logout?method=post" for 169.232.218.18 at 2014-04-12 12:32:20 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ=", "method"=>"post"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template home/logout, application/logout with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/rails/app/views"
+):
+  actionpack (4.0.2) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.2) lib/action_view/lookup_context.rb:122:in `find'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:413:in `_run__1928768214139027526__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2580505268525037094__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.2) lib/rack/lint.rb:37:in `call'
+  rack (1.5.2) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.2) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.2) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `load'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/unicorn:23:in `<main>'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `eval'
+  /usr/local/rvm/gems/ruby-2.0.0-p353/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:32:35 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:35 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:35 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:35 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:35 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:35 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:35 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:32:43 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:43 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:43 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:43 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:43 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:43 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:43 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:44 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:44 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:32:45 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Completed 500 Internal Server Error in 4ms
+
+NameError (undefined local variable or method `root' for #<HomeController:0x00000004d90ce8>):
+  app/controllers/home_controller.rb:47:in `logout'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:32:54 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:32:54 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:54 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:54 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:54 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:54 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:54 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:32:58 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:58 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:58 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:32:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:58 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:58 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:32:58 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:33:47 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:48 +0000
+
+
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:48 +0000
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:48 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:48 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:48 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:33:50 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:33:50 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:51 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:51 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:51 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:51 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:51 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:51 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:51 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:51 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:33:55 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:55 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:55 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:55 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:55 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:55 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:33:58 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:33:58 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:59 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:59 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:33:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:59 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:59 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:59 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:33:59 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:34:45 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:34:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:34:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:34:50 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:34:50 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:34:50 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:34:50 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:34:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:34:58 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:35:51 +0000
+Processing by HomeController#index as HTML
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:35:51 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:35:52 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:35:52 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:35:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:35:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:35:52 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:35:52 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:35:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:35:52 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:35:56 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:35:56 +0000
+Processing by HomeController#index as HTML
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:35:56 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:35:56 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:35:56 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:35:56 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:35:56 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:35:56 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:35:56 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:35:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:35:56 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:36:52 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:36:53 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:36:53 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:36:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:36:53 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:36:53 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:36:53 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:36:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:36:53 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:36:54 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `delet' for #<ActionDispatch::Request::Session:0x00000004f3ae18>):
+  app/controllers/home_controller.rb:49:in `logout'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:37:04 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:37:04 +0000
+Processing by HomeController#index as HTML
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:37:04 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:05 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:05 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:05 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:05 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:05 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:37:07 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:37:07 +0000
+Processing by HomeController#index as HTML
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:37:07 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:07 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:07 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:07 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:07 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:07 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:37:22 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 78ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:22 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:22 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:22 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:22 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:22 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:37:35 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:35 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:35 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:35 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:35 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:35 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:35 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:37:37 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:37:37 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 90ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:37:53 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:53 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:53 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:37:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:53 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:53 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:53 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:37:53 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:37:55 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:37:55 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:38:42 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:38:42 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:38:51 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:38:51 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:38:51 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:38:51 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:38:51 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:38:52 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:38:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:38:52 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:38:58 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:38:58 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:38:58 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:38:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:38:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:38:58 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:38:58 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:38:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:38:58 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:39:20 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:39:20 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:21 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:21 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:21 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:21 +0000
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:21 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:21 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:21 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:21 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:39:27 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:39:27 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:28 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:28 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:28 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:28 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:28 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:28 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:28 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:28 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:39:40 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:40 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:40 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:41 +0000
+
+
+Started GET "/callback?code=828edaf57c4247549fcbb8371f97cbf9" for 169.232.218.18 at 2014-04-12 12:39:45 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"828edaf57c4247549fcbb8371f97cbf9"}
+{"access_token":"205702396.482cefd.becd79b198a24ce98add23979260f51a","user":{"username":"hrsnblm1995","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_205702396_75sq_1383683662.jpg","full_name":"Hunter R","id":"205702396"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 268ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:39:45 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:39:46 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:46 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:46 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:46 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:46 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:46 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:46 +0000
+
+
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:46 +0000
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:46 +0000
+
+
+Started GET "/callback?code=15c703f3d05d4a28b55528aea2d6517c" for 169.232.218.18 at 2014-04-12 12:39:54 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"15c703f3d05d4a28b55528aea2d6517c"}
+{"access_token":"205702396.482cefd.becd79b198a24ce98add23979260f51a","user":{"username":"hrsnblm1995","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_205702396_75sq_1383683662.jpg","full_name":"Hunter R","id":"205702396"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 219ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:39:54 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:39:54 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:54 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:54 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:54 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:54 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:55 +0000
+
+
+Started GET "/callback?code=982411c0541c43b395e48e9e0d0818d2" for 169.232.218.18 at 2014-04-12 12:39:55 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"982411c0541c43b395e48e9e0d0818d2"}
+{"access_token":"644673668.482cefd.fa7b1fe9b27c41e48ad976bf46ef1687","user":{"username":"sidneydurant","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_644673668_75sq_1387392414.jpg","full_name":"Sidney Durant","id":"644673668"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 197ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:39:55 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:39:55 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=3daff88f828c48eeb421dcfec653b91f" for 169.232.218.18 at 2014-04-12 12:39:58 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"3daff88f828c48eeb421dcfec653b91f"}
+{"access_token":"205702396.482cefd.becd79b198a24ce98add23979260f51a","user":{"username":"hrsnblm1995","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_205702396_75sq_1383683662.jpg","full_name":"Hunter R","id":"205702396"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 213ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:39:58 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:39:59 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:59 +0000
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:59 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:39:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:59 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:59 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:59 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:39:59 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:01 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:02 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:02 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:02 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:02 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:02 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:02 +0000
+
+
+Started GET "/callback?code=d3fd2895437e4cb88bf63d1026ba11c2" for 169.232.218.18 at 2014-04-12 12:40:02 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"d3fd2895437e4cb88bf63d1026ba11c2"}
+{"access_token":"644673668.482cefd.fa7b1fe9b27c41e48ad976bf46ef1687","user":{"username":"sidneydurant","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_644673668_75sq_1387392414.jpg","full_name":"Sidney Durant","id":"644673668"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 235ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:40:03 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:03 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:03 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:03 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:04 +0000
+
+
+Started GET "/callback?code=387fbb7bd883473dbb378d260aef51b1" for 169.232.218.18 at 2014-04-12 12:40:07 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"387fbb7bd883473dbb378d260aef51b1"}
+{"access_token":"644673668.482cefd.fa7b1fe9b27c41e48ad976bf46ef1687","user":{"username":"sidneydurant","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_644673668_75sq_1387392414.jpg","full_name":"Sidney Durant","id":"644673668"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 313ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:40:07 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:07 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=535754f1394a481ebd4538cea3050909" for 169.232.218.18 at 2014-04-12 12:40:07 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"535754f1394a481ebd4538cea3050909"}
+
+
+Started GET "/callback?code=7103421ba7f241548910d5e8f82af5b9" for 169.232.218.18 at 2014-04-12 12:40:08 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"7103421ba7f241548910d5e8f82af5b9"}
+{"access_token":"205702396.482cefd.becd79b198a24ce98add23979260f51a","user":{"username":"hrsnblm1995","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_205702396_75sq_1383683662.jpg","full_name":"Hunter R","id":"205702396"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 293ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:40:08 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+{"access_token":"644673668.482cefd.fa7b1fe9b27c41e48ad976bf46ef1687","user":{"username":"sidneydurant","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_644673668_75sq_1387392414.jpg","full_name":"Sidney Durant","id":"644673668"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 197ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:08 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:40:08 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:08 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:08 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=e410017a9a434f4793895c53a2df9e50" for 169.232.218.18 at 2014-04-12 12:40:14 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"e410017a9a434f4793895c53a2df9e50"}
+{"access_token":"205702396.482cefd.becd79b198a24ce98add23979260f51a","user":{"username":"hrsnblm1995","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_205702396_75sq_1383683662.jpg","full_name":"Hunter R","id":"205702396"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 188ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/callback?code=a35707bda56d4c088c7beaf7f589b814" for 169.232.218.18 at 2014-04-12 12:40:15 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"a35707bda56d4c088c7beaf7f589b814"}
+{"access_token":"205702396.482cefd.becd79b198a24ce98add23979260f51a","user":{"username":"hrsnblm1995","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_205702396_75sq_1383683662.jpg","full_name":"Hunter R","id":"205702396"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 192ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:40:15 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:15 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:15 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:18 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:19 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:19 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:19 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:19 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:19 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:19 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:19 +0000
+
+
+Started GET "/callback?code=8deb4186dde444b98afca298045c1365" for 169.232.218.18 at 2014-04-12 12:40:20 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"8deb4186dde444b98afca298045c1365"}
+{"access_token":"205702396.482cefd.becd79b198a24ce98add23979260f51a","user":{"username":"hrsnblm1995","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_205702396_75sq_1383683662.jpg","full_name":"Hunter R","id":"205702396"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 199ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:40:20 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:21 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:21 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:21 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:21 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:21 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:21 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:21 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:21 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:21 +0000
+
+
+Started GET "/callback?code=c9d9bbc85da54a9bb0687fe4fd6be24d" for 169.232.218.18 at 2014-04-12 12:40:45 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"c9d9bbc85da54a9bb0687fe4fd6be24d"}
+{"access_token":"177479209.482cefd.a1c5f069ae4f483aa9dcaa89e146d043","user":{"username":"louiswilliamsofficial","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_177479209_75sq_1365346292.jpg","full_name":"Louis Williams","id":"177479209"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 219ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:40:45 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:45 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:46 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:46 +0000
+
+
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:46 +0000
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:46 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:46 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:46 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:46 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:46 +0000
+
+
+Started GET "/callback?code=69388642f0d144c4bb65365de529bf8d" for 169.232.218.18 at 2014-04-12 12:40:48 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"69388642f0d144c4bb65365de529bf8d"}
+{"access_token":"177479209.482cefd.a1c5f069ae4f483aa9dcaa89e146d043","user":{"username":"louiswilliamsofficial","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_177479209_75sq_1365346292.jpg","full_name":"Louis Williams","id":"177479209"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 193ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:40:48 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:40:48 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:49 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:49 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:40:49 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:49 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:49 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:49 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:40:49 +0000
+
+
+Started GET "/callback?code=f7959924f7ed4e30a23465653de57732" for 169.232.218.18 at 2014-04-12 12:41:40 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"f7959924f7ed4e30a23465653de57732"}
+{"access_token":"177479209.482cefd.a1c5f069ae4f483aa9dcaa89e146d043","user":{"username":"louiswilliamsofficial","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_177479209_75sq_1365346292.jpg","full_name":"Louis Williams","id":"177479209"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 195ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:41:40 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:41:41 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:41 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:41 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:41 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:41 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:41 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:41:49 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:49 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:49 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:49 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:49 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:49 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:49 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:49 +0000
+
+
+Started GET "/callback?code=54859276e4c24dbd923187990237bd5b" for 169.232.218.18 at 2014-04-12 12:41:51 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"54859276e4c24dbd923187990237bd5b"}
+{"access_token":"177479209.482cefd.a1c5f069ae4f483aa9dcaa89e146d043","user":{"username":"louiswilliamsofficial","bio":"","website":"","profile_picture":"http:\/\/images.ak.instagram.com\/profiles\/profile_177479209_75sq_1365346292.jpg","full_name":"Louis Williams","id":"177479209"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 471ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:41:52 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:52 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:52 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:52 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:52 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:52 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:41:54 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:41:54 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:55 +0000
+
+
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:55 +0000
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:55 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:55 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:55 +0000
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:41:58 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:58 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:58 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:58 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:58 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:58 +0000
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:41:58 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:41:58 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:42:24 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"OuMjUqhmpr2IF6vGDG8fK9BR++cFNRxhIkunnNdkaiQ="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:42:24 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:42:25 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:42:25 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:42:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:25 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:25 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:25 +0000
+
+
+Started GET "/callback?code=3a9aea1a118f4c44a7d8ab8ab8107b8c" for 169.232.218.18 at 2014-04-12 12:42:26 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"3a9aea1a118f4c44a7d8ab8ab8107b8c"}
+
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 232ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:42:26 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:42:26 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:42:27 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:42:27 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:42:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:27 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:27 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:27 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:42:55 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:42:56 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:42:56 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:42:56 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:56 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:56 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:56 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:42:56 +0000
+
+
+Started GET "/callback?code=a5ee1744b0cb48aa84d3cf1636501b2a" for 169.232.218.18 at 2014-04-12 12:42:58 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"a5ee1744b0cb48aa84d3cf1636501b2a"}
+Completed 500 Internal Server Error in 197ms
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/home_controller.rb:32:in `[]'
+  app/controllers/home_controller.rb:32:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/callback?code=a5ee1744b0cb48aa84d3cf1636501b2a" for 169.232.218.18 at 2014-04-12 12:43:47 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"a5ee1744b0cb48aa84d3cf1636501b2a"}
+"{\"code\": 400, \"error_type\": \"OAuthException\", \"error_message\": \"No matching code found.\"}"
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 174ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:43:47 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:43:48 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:43:48 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:43:48 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:43:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:43:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:43:48 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:43:48 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:43:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:43:48 +0000
+
+
+Started GET "/callback?code=4b86c839115e4d97bfdd0774dbfdfd07" for 169.232.218.18 at 2014-04-12 12:44:06 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"4b86c839115e4d97bfdd0774dbfdfd07"}
+"{\"access_token\":\"177479209.482cefd.a1c5f069ae4f483aa9dcaa89e146d043\",\"user\":{\"username\":\"louiswilliamsofficial\",\"bio\":\"\",\"website\":\"\",\"profile_picture\":\"http:\\/\\/images.ak.instagram.com\\/profiles\\/profile_177479209_75sq_1365346292.jpg\",\"full_name\":\"Louis Williams\",\"id\":\"177479209\"}}"
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 216ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:44:06 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:44:06 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:44:06 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:06 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:44:06 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:06 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:44:06 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:06 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:07 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:44:41 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:44:42 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:44:42 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:44:42 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:42 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:42 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:42 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:42 +0000
+
+
+Started GET "/callback?code=181b5625a3d943838273d55a98db9e0a" for 169.232.218.18 at 2014-04-12 12:44:44 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"181b5625a3d943838273d55a98db9e0a"}
+
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 206ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:44:44 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:44:44 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:44:44 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:44:44 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:44:44 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:44 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:44 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:44 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:44 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:44:44 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:46:01 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:02 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:02 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:02 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:02 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:02 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:02 +0000
+
+
+Started GET "/callback?code=fa032f13f1864c98a1f506d81111c078" for 169.232.218.18 at 2014-04-12 12:46:03 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"fa032f13f1864c98a1f506d81111c078"}
+
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 190ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:46:04 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:46:04 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:04 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:04 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:04 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:04 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:04 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:46:26 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:26 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:26 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:26 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:26 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:26 +0000
+
+
+Started GET "/callback?code=4485e7105de843f5a2c72d2eca694c89" for 169.232.218.18 at 2014-04-12 12:46:31 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"4485e7105de843f5a2c72d2eca694c89"}
+{"access_token"=>"177479209.482cefd.a1c5f069ae4f483aa9dcaa89e146d043", "user"=>{"username"=>"louiswilliamsofficial", "bio"=>"", "website"=>"", "profile_picture"=>"http://images.ak.instagram.com/profiles/profile_177479209_75sq_1365346292.jpg", "full_name"=>"Louis Williams", "id"=>"177479209"}}
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 206ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:46:31 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:46:31 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:31 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:31 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:46:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:31 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:31 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:46:31 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:47:55 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:47:55 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:47:55 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:47:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:47:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:47:55 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:47:55 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:47:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:47:55 +0000
+
+
+Started GET "/callback?code=b00ca163eca74191bf7c7e368cdf0c50" for 169.232.218.18 at 2014-04-12 12:47:57 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"b00ca163eca74191bf7c7e368cdf0c50"}
+Completed 500 Internal Server Error in 231ms
+
+NoMethodError (undefined method `access_token' for #<Hash:0x00000001eae420>):
+  app/controllers/home_controller.rb:34:in `callback'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/callback?code=b00ca163eca74191bf7c7e368cdf0c50" for 169.232.218.18 at 2014-04-12 12:48:47 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"b00ca163eca74191bf7c7e368cdf0c50"}
+
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 172ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:48:48 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:48:48 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:48:48 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:48:48 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:48:48 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:48:48 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:48:48 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:48:48 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:48:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:48:48 +0000
+
+
+Started GET "/callback?code=bb822881f8824251b459a2fa0ced933e" for 169.232.218.18 at 2014-04-12 12:48:50 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"bb822881f8824251b459a2fa0ced933e"}
+177479209.482cefd.a1c5f069ae4f483aa9dcaa89e146d043
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 230ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:48:50 +0000
+Processing by HomeController#show as HTML
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:48:50 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:48:51 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:48:51 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:48:51 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:48:51 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:48:51 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:48:51 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:48:51 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:48:51 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:49:09 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:10 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:10 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:10 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:10 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:10 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:10 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:10 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:10 +0000
+
+
+Started GET "/callback?code=1adb1ba5a4e6466b9801598819a0b893" for 169.232.218.18 at 2014-04-12 12:49:11 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"1adb1ba5a4e6466b9801598819a0b893"}
+177479209.482cefd.a1c5f069ae4f483aa9dcaa89e146d043
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 203ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:49:12 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:12 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:12 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:12 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:12 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:12 +0000
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:49:18 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:19 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:19 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:19 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:19 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:19 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:19 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:19 +0000
+
+
+Started GET "/callback?code=503c49d6586f4dc594f147f886b425f6" for 169.232.218.18 at 2014-04-12 12:49:22 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"503c49d6586f4dc594f147f886b425f6"}
+644673668.482cefd.fa7b1fe9b27c41e48ad976bf46ef1687
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 184ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:49:22 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:22 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:22 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:22 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:22 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:22 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:22 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:49:28 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"e7MxsnGqbZVYSHYmR7zP3GxBX5pFYbsolVaIdP9MgQw="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:49:28 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:28 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:28 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:28 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:28 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:28 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:28 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:28 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:28 +0000
+
+
+Started GET "/callback?code=a4c99edef11e4d8691783c02ef6f39a3" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"a4c99edef11e4d8691783c02ef6f39a3"}
+644673668.482cefd.fa7b1fe9b27c41e48ad976bf46ef1687
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 277ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:30 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:31 +0000
+
+
+Started GET "/callback?code=200732211d044f1d8caf430237bc406a" for 169.232.218.18 at 2014-04-12 12:49:33 +0000
+Processing by HomeController#callback as HTML
+  Parameters: {"code"=>"200732211d044f1d8caf430237bc406a"}
+205702396.482cefd.becd79b198a24ce98add23979260f51a
+Redirected to http://selfieaware.com/home
+Completed 302 Found in 186ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 169.232.218.18 at 2014-04-12 12:49:33 +0000
+Processing by HomeController#show as HTML
+  Rendered home/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:33 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:33 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:33 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:33 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:33 +0000
+
+
+Started POST "/logout" for 169.232.218.18 at 2014-04-12 12:49:34 +0000
+Processing by HomeController#logout as HTML
+  Parameters: {"authenticity_token"=>"QPfYtvOpJ9WGmZh3SYbOuQCFmc02HO0IdM/kZZP2Teo="}
+Redirected to http://selfieaware.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 169.232.218.18 at 2014-04-12 12:49:34 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:35 +0000
+
+
+Started GET "/assets/ajax.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:35 +0000
+
+
+Started GET "/assets/home.css?body=1" for 169.232.218.18 at 2014-04-12 12:49:35 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:35 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:35 +0000
+
+
+Started GET "/assets/ajax.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:35 +0000
+
+
+Started GET "/assets/home.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:35 +0000
+
+
+Started GET "/assets/application.js?body=1" for 169.232.218.18 at 2014-04-12 12:49:35 +0000

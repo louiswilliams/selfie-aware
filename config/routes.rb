@@ -1,6 +1,9 @@
 Myapp::Application.routes.draw do
 
-  get "home/:user_id" => "main#show"
+  get "callback" => "home#callback"
+  get "home" => "home#show"
+  get "home/:user_id" => "home#show"
+  post "logout" => "home#logout"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
