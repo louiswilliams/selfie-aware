@@ -72,3 +72,8 @@ bundle install
 ls
 bundle
 exit
+git add .
+exit
+git add .
+cd ..
+exit
