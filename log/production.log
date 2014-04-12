@@ -4263,3 +4263,31 @@ I, [2014-04-12T08:17:54.029237 #872]  INFO -- : Started HEAD "/" for 95.229.169.
 I, [2014-04-12T08:17:54.030634 #872]  INFO -- : Processing by HomeController#index as HTML
 I, [2014-04-12T08:17:54.031713 #872]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.1ms)
 I, [2014-04-12T08:17:54.032686 #872]  INFO -- : Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+I, [2014-04-12T08:43:52.277862 #877]  INFO -- : Started GET "/" for 70.197.64.44 at 2014-04-12 08:43:52 +0000
+I, [2014-04-12T08:43:52.282601 #877]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-04-12T08:43:52.285175 #877]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.2ms)
+I, [2014-04-12T08:43:52.286856 #877]  INFO -- : Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+I, [2014-04-12T08:43:52.895340 #872]  INFO -- : Started GET "/assets/rails.png" for 70.197.64.44 at 2014-04-12 08:43:52 +0000
+I, [2014-04-12T08:43:57.797859 #877]  INFO -- : Started GET "/" for 66.220.158.116 at 2014-04-12 08:43:57 +0000
+I, [2014-04-12T08:43:57.800780 #877]  INFO -- : Processing by HomeController#index as */*
+I, [2014-04-12T08:43:57.810219 #877]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.6ms)
+I, [2014-04-12T08:43:57.813382 #877]  INFO -- : Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+I, [2014-04-12T08:43:58.219701 #872]  INFO -- : Started GET "/assets/rails.png" for 66.220.158.118 at 2014-04-12 08:43:58 +0000
+I, [2014-04-12T08:43:58.331959 #872]  INFO -- : Started GET "/assets/rails.png" for 66.220.158.116 at 2014-04-12 08:43:58 +0000
+I, [2014-04-12T08:43:58.432752 #877]  INFO -- : Started GET "/assets/rails.png" for 66.220.158.115 at 2014-04-12 08:43:58 +0000
+I, [2014-04-12T08:43:58.651554 #872]  INFO -- : Started GET "/assets/rails.png" for 173.252.103.1 at 2014-04-12 08:43:58 +0000
+I, [2014-04-12T08:43:58.741587 #877]  INFO -- : Started GET "/assets/rails.png" for 173.252.103.4 at 2014-04-12 08:43:58 +0000
+I, [2014-04-12T08:43:58.964403 #872]  INFO -- : Started GET "/assets/rails.png" for 173.252.113.118 at 2014-04-12 08:43:58 +0000
+I, [2014-04-12T08:44:25.090434 #877]  INFO -- : Started GET "/" for 198.228.216.25 at 2014-04-12 08:44:25 +0000
+I, [2014-04-12T08:44:25.093579 #877]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-04-12T08:44:25.096201 #877]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.2ms)
+I, [2014-04-12T08:44:25.097948 #877]  INFO -- : Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+I, [2014-04-12T08:44:25.706452 #872]  INFO -- : Started GET "/assets/rails.png" for 198.228.216.25 at 2014-04-12 08:44:25 +0000
+I, [2014-04-12T09:10:52.289245 #877]  INFO -- : Started GET "/" for 169.232.218.18 at 2014-04-12 09:10:52 +0000
+I, [2014-04-12T09:10:52.290751 #877]  INFO -- : Processing by HomeController#index as HTML
+I, [2014-04-12T09:10:52.298408 #877]  INFO -- :   Rendered home/index.html.erb within layouts/application (6.2ms)
+I, [2014-04-12T09:10:52.300172 #877]  INFO -- : Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+I, [2014-04-12T09:19:04.952503 #872]  INFO -- : Started GET "/" for 169.232.218.18 at 2014-04-12 09:19:04 +0000
+I, [2014-04-12T09:19:04.954861 #872]  INFO -- : Processing by HomeController#index as */*
+I, [2014-04-12T09:19:04.961055 #872]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.4ms)
+I, [2014-04-12T09:19:04.963404 #872]  INFO -- : Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)

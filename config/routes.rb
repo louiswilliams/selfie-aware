@@ -1,4 +1,9 @@
 Myapp::Application.routes.draw do
+  get "ajax/get_images"
+  get "ajax/process_images"
+  get "ajax/process_captions"
+  get "friends/index"
+  get "friends/show"
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
