@@ -1,6 +1,11 @@
 require 'test_helper'
 
 class AjaxControllerTest < ActionController::TestCase
+  test "should get get_user_data" do
+    get :get_user_data
+    assert_response :success
+  end
+
   test "should get get_images" do
     get :get_images
     assert_response :success

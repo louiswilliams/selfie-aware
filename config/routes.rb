@@ -1,15 +1,11 @@
 Myapp::Application.routes.draw do
-  get "ajax/get_images"
-  get "ajax/process_images"
-  get "ajax/process_captions"
-  get "friends/index"
-  get "friends/show"
-  get "home/index"
+
+  get "home/:user_id" => "main#show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-root to: 'home#index'
+  root to: 'home#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
