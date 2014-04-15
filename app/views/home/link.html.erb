@@ -1,0 +1,12 @@
+<div id="status_bar">
+<%= link_to "Home", root_path %> | 
+<div id="name"><%= @link.full_name %></div>
+<div id="username"><%= link_to "@#{@link.username}", "http://instagram.com/#{@link.username}", target: :new %></div>
+<div id="image_wrap">
+    <%= image_tag @link.propic, :id => "propic" %>
+</div>
+<div id="calculation_results" style="display: block !important">
+    Selfiness score: <%= @link.score %><br>
+    <div class='fb-share-button' data-href="http://selfieaware.com/link/<%= @link.link_id =%>" data-width='200' data-type='button'></div><br>
+    <a href="/">Find your selfiness score!</a>
+</div>

@@ -1,2 +1,22 @@
-<h1>Log in</h1>
-<%= link_to "Log in to Instagram here", Instagram.authorize_url(:redirect_uri => "http://selfieaware.com/callback") %>
+<div class="parent">
+    <div id="child">
+        <img id="logo" border="0" src="assets/insta.png" alt="logo" width="25%" height="25%">
+        <h1 class="title">#SelfieAware</h1>
+        <p id="tagline">How much do you selfie?</p>
+        <%= link_to "<span class='label label-primary'>Log in with Instagram</span>".html_safe, Instagram.authorize_url(:redirect_uri => "http://selfieaware.com/callback"), {id: "get_started"} %>
+        <%= link_to "<span class='label label-primary'>About Us</span>".html_safe, "/about", {id: "learn_more"} %>
+    </div>
+    <div id="cycles">
+        <div class="row">
+          <div id="tri1" class="col-md-4">
+            <img id="logo1" border="0" src="assets/cloud.png" alt="logo" width="75%" height="75%"><div style="padding-top:4%"> </div>Login with Instagram.<br> That's where most<br>selfies hide.
+          </div>
+          <div id="tri2" class="col-md-4">
+            <img id="logo2" border="0" src="assets/calc.png" alt="logo2" width="60%" height="60%">Wait a second as<br>we calculate your<br>Selfie Score.
+          </div>
+          <div id="tri3" class="col-md-4">
+            <img id="logo3" border="0" src="assets/facebook.png" alt="logo3" width="50%" height="50%"><div style="padding-top:3%"> </div>Share your results<br>on Facebook!
+          </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,90 @@
-<h1>You are home!</h1>
-<%= session[:access_token] %>
-<%= button_to "Log out...", action: "logout"%>
+<div id="status_bar">
+    <%= link_to "Home", root_path %> | 
+    <%= link_to "Log out", "http://instagram.com/accounts/logout", {:id => "logout"} %>
+</div>
+<div id="name"><%= @user.full_name %></div>
+<div id="username"><%= link_to "@#{@user.username}", "http://instagram.com/#{@user.username}", target: :new %></div>
+<div id="image_wrap">
+    <div id="image_overlay">Calculating...</div>
+    <%= image_tag @user.profile_picture, :id => "propic" %>
+</div>
+<div id="calculation_results">
+</div>
+<input type="text" id="user_search" placeholder="Search for users">
+<div id="search_results"></div>
+<div id="follows">
+    <h4 style="text-align: center">Users You Follow</h4>
+</div>
+<script>
+var timer;
+var $image = $("#propic");
+var $calculation = $("#calculation_results");
+var prof = "<%= @user.profile_picture %>";
+
+$(document).ready(function() {
+    $("#user_search").keyup(function (event) {
+            query = this.value;
+            if (query.length > 0) {
+                get_search_results(this.value, function (results) {
+                    display_results(results);
+                });
+            }
+            });
+    $("#logout").click(function(event) {
+        event.preventDefault();
+        $.get("/logout", function(data) {
+            window.location = "http://instagram.com/accounts/logout";
+        });
+    });
+
+
+    get_follows(<%= @user.id %>, function(data) {
+        users = data["results"];
+        $.each(users, function(i, user) {
+            $("#follows").append(user_html(user));
+        });
+    });
+
+    startVideo();
+    process_images(<%= @user.id %>, function(data) {
+        breakPictureRotation();
+        $("#calculation_results").prepend("Selfiness score: " + data["selfies"] + "<br>"
+            + "<div class='fb-share-button' data-href='http://selfieaware.com/' data-width='200' data-type='button'></div><br>");
+        FB.XFBML.parse();
+    });
+});
+
+function display_results(results) {
+    $("#search_results").html("");
+    users = results["results"];
+    $.each(users, function(i, user) {
+        $("#search_results").append(user_html(user));
+    })
+}
+
+function breakPictureRotation() {
+    window.clearInterval(timer);
+    $image.attr("src", prof);
+    $("#image_overlay").fadeOut(1000);
+    $calculation.slideDown(1000);
+}
+
+function user_html(user) {
+    return "<a href='/home/" + user["id"] + "'><div class='search_result'><img src='" + user["profile_picture"] + "'><div>@" + user["username"] + "<div>" + user["full_name"] + "</div></div></div></a>";
+}
+
+var startVideo = function() {
+    //Static list of links for testing
+    var links = <%== @images %>;
+    var index = 0;
+    var timeInterval = 300;
+    timer=setInterval(function(){myTimer()},timeInterval);
+
+    function myTimer() {
+        $image.attr("src", links[index]);
+        index++;
+        index = index % links.length;
+    }
+}
+
+</script>

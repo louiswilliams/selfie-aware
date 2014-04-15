@@ -1,0 +1,110 @@
+/*
+ *= require bootstrap
+ *= require bootstrap-theme
+ *= require_self
+ */
+
+@font-face {
+  font-family: 'lobster';
+  src: url('lobster.otf');
+  src: local('☺'), url('lobster.otf') format('OpenType');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a:hover{
+  text-decoration:none;
+}
+
+@font-face {
+  font-family: 'roboto-thin';
+  src: url('Roboto-Thin.ttf');
+  src: local('☺'), url('Roboto-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('Roboto-Medium.ttf');
+  src: local('☺'), url('Roboto-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color:#fdfdfd;
+  padding-bottom:3%;
+}
+
+html, body{
+    height: 100%;
+}
+
+#banner {
+  height: 50%;
+  background-color: #49c3fb;
+  width:100%;
+  display: table;
+}
+
+#text {
+  font-family: "lobster";
+  font-size: 8em;
+  color: #fdfdfd;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#text a{
+color: #fdfdfd;
+text-decoration: none;
+}
+
+.DivHelper {
+  display: inline-block;
+  vertical-align: middle;
+  height:100%;
+}
+
+#about {
+  margin-top:50px;
+  margin-bottom:50px;
+  width:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Arial";
+  font-size: 1.5em;
+  color: #A9B0B3;
+  text-align:justify;
+}
+
+#header {
+  margin-top:20px;
+  text-align:left;
+  font-size: 1.5em;
+  font-family: "roboto-medium";
+  color:#404749;
+}
+
+@media all and (max-width: 613px) {
+  #text {
+    font-size: 6em;
+  }
+
+  #about {
+    width:96%;
+  }
+}
+
+@media all and (max-width: 467px) {
+  #text {
+    font-size: 5em;
+  }
+
+  #about {
+    width:96%;
+  }
+}

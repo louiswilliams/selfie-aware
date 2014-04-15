@@ -8,6 +8,219 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require bootstrap
+ *= require bootstrap-theme
  *= require_self
- *= require_tree .
  */
+
+@font-face {
+  font-family: 'lobster';
+  src: url('lobster.otf');
+  src: local('☺'), url('lobster.otf') format('OpenType');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-thin';
+  src: url('Roboto-Thin.ttf');
+  src: local('☺'), url('Roboto-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color:#49c3fb;
+  padding-bottom:3%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.title {
+  font-family: "lobster";
+  font-size: 10em;
+  color: #fdfdfd;
+  text-align: center;
+}
+
+.wrap {
+  margin-top: 5%; 
+}
+
+.parent {
+  margin-top:3%;
+}
+
+.label:hover {
+    text-decoration: none;
+    background: #eee;
+}
+
+#child {
+  clear: both;
+}
+
+#tri1 {
+  margin-top:5%;
+  text-align: center;
+  font-size: 2em;
+  font-family: "roboto-thin";
+  text-align: center;
+  color: white;
+}
+
+#tri2 {
+  margin-top:11%;
+  text-align: center;
+  font-size: 2em;
+  font-family: "roboto-thin";
+  text-align: center;
+  color: white;
+}
+
+#tri3 {
+  margin-top:13%;
+  text-align: center;
+  font-size: 2em;
+  font-family: "roboto-thin";
+  text-align: center;
+  color: white;
+}
+
+#window {
+  width:500px;
+  height:500px;
+}
+
+#logo3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tagline {
+  font-size: 2em;
+  font-family: "roboto-thin";
+  text-align: center;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+}
+
+.label-primary {
+    margin-bottom: 10px;
+  font-size: 2em;
+  font-family: "roboto-thin";
+  background-color: #fdfdfd;
+  color: #49c3fb;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+  cursor: pointer;
+}
+/* Responsive Design */ 
+@media all and (max-width: 956px) {
+  .title {
+    font-size: 8em;
+  }
+  #logo {
+    width:30%;
+  }
+}
+
+@media all and (max-width: 630px) {
+  .title {
+    font-size: 6em;
+  }
+  .label-primary {
+    font-size: 1em;
+  }
+  #logo {
+    width:60%;
+  }
+  #logo1 {
+    width:35%;
+    height:35%;
+  }
+  #logo2 {
+    width:33%;
+    height:33%;
+  }
+  #logo3 {
+    width:30%;
+    height:30%;
+  }
+  .label-primary {
+    font-size: 2em;
+    height:100%;
+    width:50%;
+    word-wrap:break-word;
+     white-space: normal;
+  }
+
+}
+
+@media all and (max-width: 460px) {
+  .title {
+    font-size: 4em;
+  }
+  #logo {
+    width:60%;
+  }
+}
+
+@media all and (max-width: 993px) {
+  #logo1 {
+    width:35%;
+    height:35%;
+  }
+  #logo2 {
+    width:33%;
+    height:33%;
+  }
+  #logo3 {
+    width:30%;
+    height:30%;
+  }
+}
+.search_result{
+  margin: 10px;
+}
+.search_result img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.search_result span {
+  padding-left: 10px;
+}
+
+/*
+@media all and (max-width: 770px) {
+  #cycles {
+    display:none;
+  }
+}
