@@ -111,3 +111,15 @@ rake db:migrate
 sqlite3 db/development.sqlite3
 cat log/development.log  | tail -n 100
 cat log/development.log  | tail -n 1000
+git push
+git add .
+git commit -m "Semi-completed final product"
+git push
+exit
+ps -A
+exit
+ls
+nano app/models/facial_recognition.rb 
+nano .gitignore
+nano .gitignore
+git rm 
