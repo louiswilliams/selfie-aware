@@ -2,12 +2,13 @@ class HomeController < ApplicationController
     require 'net/http'
     require 'json'
 
+    Dir.chdir(File.dirname(__FILE__))
+    @@insta_secret = File.open("insta.secret").read
 
   def index
     Instagram.configure do |config|
         config.client_id = "482cefd5879c41b48557442fe6500b01"
-        Dir.chdir(File.dirname(__FILE__))
-        config.client_secret = File.open("insta.secret").read
+        config.client_secret = @@insta_secret
     end
   end
 
@@ -18,6 +19,17 @@ class HomeController < ApplicationController
       return
     end
     render :layout => "results"
+  end
+
+  def flush
+    @link = Link.find_by_link_id params[:link_id]
+    if !@link
+      redirect_to root_path
+      return
+    end
+    tmp_user_id = @link.user_id
+    @link.destroy
+    redirect_to "#{home_path}/#{tmp_user_id}"
   end
 
   def show
@@ -46,7 +58,8 @@ class HomeController < ApplicationController
         media_items.each do |media_item|
             @images << media_item.images.low_resolution.url
         end
-    rescue
+    rescue Exception => e
+        Rails.logger.info "Rescued Exception: #{e.inspect}"
         return redirect_to (root_path)
     else
         return render :layout => "results"        
@@ -54,18 +67,28 @@ class HomeController < ApplicationController
   end
 
   def callback
+    if params[:error]
+      Rails.logger.info "Error: #{params[:error_reason]}"
+      redirect_to root_path
+      return
+    end
     http = Net::HTTP.new("instagram.com", 443)
     http.use_ssl = true
     data = {
         :grant_type => "authorization_code",
         :redirect_uri => "http://selfieaware.com/callback",
         :client_id => "482cefd5879c41b48557442fe6500b01",
-        :client_secret => "685dafb12115456a943911431616b383",
+        :client_secret => @@insta_secret,
         :code => params[:code]
     }
     response = Net::HTTP::post_form(URI.parse("https://instagram.com/oauth/access_token"), data)
-    session[:access_token] = JSON.parse(response.body)["access_token"]
-    Rails.logger.info session[:access_token]
+    response_json = JSON.parse(response.body)
+    if response_json["code"].eql? "400"
+      Rails.logger.info "Error(400): #{response_json['error_type']}: #{response_json['error_message']}"
+      redirect_to root_path
+      return
+    end
+    session[:access_token] = response_json["access_token"]
     redirect_to :action => "show"
   end
 

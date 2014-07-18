@@ -9,7 +9,7 @@ class FacialRecognition
 	end
 
 	def addPics( pics ) # pics is an array of pics
-		images = []
+		images = [] # images contains an array of processes images from Rekognition
 		for i in 0..pics.length
 			images << addFaces( pics[i] )
 		end 
@@ -17,9 +17,11 @@ class FacialRecognition
 		maxCluster = clusterFaces()
 		Rails.logger.info "Faces: #{faces}"
 		Rails.logger.info "maxCluster: #{maxCluster}" 
-		score = ((maxCluster*3 + faces)/pics.length)*100 + 1
+		# score = ((maxCluster*3 + faces)/pics.length)*100 + 1
+		score = (maxCluster.to_f / pics.length) * 100
+		Rails.logger.info "SCORE: #{score}"
 		deleteFaces()
-		return faces
+		return score
 	end
 
 	def addFaces( pic )
@@ -56,7 +58,7 @@ class FacialRecognition
 
 		#figure out the size of the largest cluster
 		clusters = JSON.parse(res.body)["clusters"]
-		Rails.logger.info clusters
+		Rails.logger.info "CLusters: #{clusters}"
 		totalClusterLength = 0;
 		maxClusterLength = 0
 		clusters.each do |cluster|

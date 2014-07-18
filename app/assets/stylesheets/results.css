@@ -34,7 +34,7 @@ body {
 }
 
 .fb-share-button {
-
+  margin-bottom: 5px;
 }
 
 
@@ -112,9 +112,10 @@ background-image: url("/assets/images/facebook_hover.png");
 
 #calculation_results {
   display: none;
-  width: 220px;
-  height: 60px;
-  font-size: 16pt;
+  color: #555;
+  width: 330px;
+  height: 125px;
+  font-size: 14pt;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -122,15 +123,39 @@ background-image: url("/assets/images/facebook_hover.png");
   text-align: center;
 }
 
+.score {
+  color: #000;
+  font-size: 18pt;
+}
+
+.results_grey_link{
+  color: #AAA;
+  font-size: 10pt;
+}
+
+.results_grey_link > a{
+  color: #AAA;
+  font-size: 10pt;
+}
+
+#results_find_yours {
+  font-size: 18pt;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
 #search_results {
-	width: 250px;
-	display: block;
+	width: 300px;
+	display: none;
 	margin-left: auto;
 	margin-right: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border: 1px solid #bbb;
+  margin-top: 0px;
+  padding-top: 10px;
+  border: 1px solid #ddd;
   border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top: 0px;
+  border-top-right-radius: 0px;
 }
 
 .search_result{
@@ -152,25 +177,31 @@ background-image: url("/assets/images/facebook_hover.png");
 }
 
 #user_search {
-  width: 250px;
+  width: 300px;
   display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0px;
     border-radius: 7px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     padding: 7px;
     border: 1px solid #ddd;
 }
 
 #follows{
-  width: 250px;
+  width: 300px;
   max-height: 600px;
-  overflow: scroll;
+  overflow-y: scroll;
   display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     margin-bottom: 10px;
-  border: 1px solid #bbb;
+  border: 1px solid #ddd;
   border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 @media all and (max-width: 460px) {

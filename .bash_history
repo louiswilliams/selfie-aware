@@ -123,3 +123,73 @@ nano app/models/facial_recognition.rb
 nano .gitignore
 nano .gitignore
 git rm 
+git rm app/controllers/*.secret
+git add .
+git rm app/controllers/*.secret
+ls app/controllers/
+git reset
+git reflog
+ls app/controllers/
+ls app/controllers/ -ls
+ls app/controllers/ -lsa
+nano app/controllers/facebook.secret
+nano app/controllers/instagram.secret
+nano app/controllers/insta.secret
+mak
+git add .
+git rm --cached app/controllers/*.secret
+ls app/controllers/
+git commit -m "Changed secret keys"
+git push
+sudo shutdown now
+shutdown now
+su root
+service unicorn restart
+sudo service unicorn restart
+groups
+su root
+su root
+su root
+ls
+nano config.ru 
+ls
+ls -ls
+ps -A
+service restart 
+service unicorn restart
+su root
+ls
+nano config
+nano config.ru 
+nano config/boot.rb 
+rails -v
+cat log/development.log | tail -n 1000
+cat log/development.log | tail -n 100
+cat log/development.log | tail -n 100
+cat log/development.log | tail -n 100
+cat log/development.log | tail -n 100
+cat log/development.log | tail -n 2000 | grep face
+cat log/development.log | tail -n 2000 | grep faces
+cat log/development.log | tail -n 1-000 | grep faces
+cat log/development.log | tail -n 10000 | grep faces
+cat log/development.log | tail -n 100000 | grep faces
+cat log/development.log | grep faces
+cat log/development.log | grep faces
+cat log/development.log | tail -n100
+rake routes
+cat log/development.log | tail -n100
+cat log/development.log | tail -n200
+cat log/development.log | tail -n100
+cat log/development.log | tail -n200
+cat log/development.log | tail -n200
+cat log/development.log | tail -n200
+cat log/development.log | tail -n200
+cat log/development.log | tail -n400
+cat log/development.log | tail -n500 | less
+cat log/development.log | tail -n1000 | less
+cat log/development.log | tail -n200
+cat log/development.log | tail -n200
+cat log/development.log | tail -n200
+cat log/development.log | tail -n200
+cat log/development.log | tail -n200
+cat log/development.log | tail -n200

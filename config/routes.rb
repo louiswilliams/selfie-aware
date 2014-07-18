@@ -1,6 +1,7 @@
 Myapp::Application.routes.draw do
 
   get "link/:link_id" => "home#link"
+  get "link/:link_id/flush" => "home#flush"
   post "ajax/get_follows"
   post "ajax/search"
   post "ajax/get_images"

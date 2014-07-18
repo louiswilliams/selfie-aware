@@ -13,12 +13,15 @@ class AjaxController < ApplicationController
       while found
         found = false
         users = client.user_follows :cursor => cursor
-        Rails.logger.info users
+        # Rails.logger.info users
         for user in users
           found = true
           results << user
         end
         cursor += 1
+      end
+      results.sort! do |a,b|
+        a.full_name.downcase <=> b.full_name.downcase
       end
     end
     render :json => {"results" => results}
@@ -49,12 +52,12 @@ class AjaxController < ApplicationController
         if !link
           images = []
           captions = []
-          media_items = client.user_recent_media(user.id)
+          media_items = client.user_recent_media(user.id, {:count => 19})
           media_items.each_with_index do |media_item, i|
               images << media_item.images.thumbnail.url 
-              if media_item.caption 
-                  captions << media_item.caption.text 
-              end 
+              # if media_item.caption 
+              #     captions << media_item.caption.text 
+              # end 
           end
 
           if images
@@ -72,7 +75,14 @@ class AjaxController < ApplicationController
             link.score = selfies
             link.save
           end
+        else
+          link.user_id = user.id
+          link.propic = user.profile_picture
+          link.full_name = user.full_name
+          link.username = user.username
+          link.save
         end
+
         # render :json => {"images" => images, "captions" => captions}
     end
     render :json => {"selfies" => link.score, "link" => "#{link_url}#{link.link_id}"}

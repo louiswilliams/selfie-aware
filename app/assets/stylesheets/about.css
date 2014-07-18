@@ -37,6 +37,10 @@ body {
   padding-bottom:3%;
 }
 
+.parent {
+  overflow-x: hidden;
+}
+
 html, body{
     height: 100%;
 }
@@ -89,22 +93,28 @@ text-decoration: none;
   color:#404749;
 }
 
+@media all and (max-width: 800px) {
+  #about {
+    width:65%;
+  }
+}
+
 @media all and (max-width: 613px) {
   #text {
     font-size: 6em;
   }
 
   #about {
-    width:96%;
+    width:80%;
   }
 }
 
 @media all and (max-width: 467px) {
   #text {
-    font-size: 5em;
+    font-size: 4em;
   }
 
   #about {
-    width:96%;
+    width:90%;
   }
 }

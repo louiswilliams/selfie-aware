@@ -1,3 +1,11 @@
+<% content_for :title, @link.full_name %>
+<% content_for :head do %>
+<% name = @link.full_name.blank? ? "@#{@link.username}" : @link.full_name %>
+    <meta property="og:image" content="http://selfieaware.com/assets/selfieaware.png" />
+    <meta property="og:title" content="<%= name %> scored <%= @link.score %>% on SelfieAware" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:description" content="SelfieAware uses advanced facial recognition algorithms to calculate selfiness: the percentage of Instagram pictures that are of you"/>
+<% end%>
 <div id="status_bar">
 <%= link_to "Home", root_path %> | 
 <div id="name"><%= @link.full_name %></div>
@@ -6,7 +14,8 @@
     <%= image_tag @link.propic, :id => "propic" %>
 </div>
 <div id="calculation_results" style="display: block !important">
-    Selfiness score: <%= @link.score %><br>
+    Selfiness:<br><span class='score'><%= @link.score %>%</span><br>of your Instagram pictures are of you<br>
     <div class='fb-share-button' data-href="http://selfieaware.com/link/<%= @link.link_id =%>" data-width='200' data-type='button'></div><br>
-    <a href="/">Find your selfiness score!</a>
+    <a id="results_find_yours" href="/">Find your selfiness score!</a>
+
 </div>
