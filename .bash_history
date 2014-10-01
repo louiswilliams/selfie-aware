@@ -193,3 +193,9 @@ cat log/development.log | tail -n200
 cat log/development.log | tail -n200
 cat log/development.log | tail -n200
 cat log/development.log | tail -n200
+git status
+git status
+git add .
+git commit -m "Production application"
+git push
+exit
