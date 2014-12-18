@@ -199,3 +199,14 @@ git add .
 git commit -m "Production application"
 git push
 exit
+ls
+git status
+ls
+ls -lsa
+git add .
+git commit -m "Final product"
+git push
+git remote
+git remote origin
+git remote -v 
+exit
